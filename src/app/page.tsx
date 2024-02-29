@@ -3,6 +3,9 @@ import Image from "next/image";
 import { list } from "postcss";
 import { title } from "process";
 
+// import React, { useState } from 'react';
+import { Link as Scroll } from 'react-scroll';
+
 
 interface PostProps {
   title: string;
@@ -49,7 +52,12 @@ function Menu({ a1, a2, a3 }: MenuProps){
 
 export default function Home() {
   const props1 = {
-    title: "example",
+    title: "example1",
+    url: "https://example.com"
+  };
+
+  const props2 = {
+    title: "example2",
     url: "https://example.com"
   };
 
@@ -64,6 +72,10 @@ export default function Home() {
       <h1>Hello World</h1>
       <Posts title = {props1.title} url = {props1.url} />
       <Menu a1 = {menu1.a1} a2 = {menu1.a2} a3 = {menu1.a3} />
+      <Posts title = {props2.title} url = {props2.url} />
+      <br>
+      </br>
+      <section id="concept"></section>
     </div>
   );
 }
