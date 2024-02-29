@@ -4,6 +4,7 @@ import { list } from "postcss";
 import { title } from "process";
 import "../src/app/index.css";
 
+
 interface PostProps {
   title: string;
   url: string;
