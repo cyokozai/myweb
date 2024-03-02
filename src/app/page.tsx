@@ -13,13 +13,6 @@ interface PostProps {
 }
 
 
-interface MenuProps {
-  a1: string;
-  a2: string;
-  a3: string;
-}
-
-
 function Posts({ title, url }: PostProps){
   return(
     <article>
@@ -50,7 +43,7 @@ export default function Home() {
 
   return(
     <div>
-      <Menu a1 = {menu1.a1} a2 = {menu1.a2} a3 = {menu1.a3} />
+      {/* <Menu a1 = {menu1.a1} a2 = {menu1.a2} a3 = {menu1.a3} /> */}
       
       <section id="concept"></section>
     </div>
